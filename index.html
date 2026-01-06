@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit Feedback</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background: radial-gradient(circle at top, #0f172a, #020617 70%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .container {
+      background: rgba(2, 6, 23, 0.8);
+      padding: 28px;
+      border-radius: 18px;
+      width: 340px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 14px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      background: #020617;
+      color: white;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: none;
+      height: 80px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      border: none;
+      background: #22c55e;
+      color: #020617;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    .credit {
+      position: fixed;
+      bottom: 10px;
+      right: 14px;
+      font-size: 11px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <form class="container" action="https://formspree.io/f/mgovjjno" method="POST">
+    <h2>Submit Feedback</h2>
+
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="text" name="telegram" placeholder="Telegram Username" required>
+
+    <textarea name="feedback" placeholder="Submit Feedback" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="credit">Created By Shawon</div>
+
+</body>
+</html>
